@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estruturas Jurídicas e Regimes Tributários no Brasil - Estudo Executivo de Silvanio Gois</title>
-
     <meta name="description" content="Estudo executivo aprofundado por Silvanio Gois sobre estruturas jurídicas e regimes tributários no Brasil. Análise estratégica de gestão, planejamento fiscal e conformidade empresarial para líderes.">
     <meta name="keywords" content="Estruturas Jurídicas, Regimes Tributários, Simples Nacional, Lucro Presumido, Lucro Real, Reforma Tributária, EC 132/2023, Planejamento Fiscal, Silvanio Gois, Automação Contábil">
     <meta property="og:title" content="Análise Estratégica: Estruturas Jurídicas e Tributárias no Brasil - Silvanio Gois">
@@ -13,130 +12,184 @@
     <meta property="og:url" content="https://www.linkedin.com/in/silvanio-gois-6667b918b/">
     <meta property="og:image" content="SG_Executivo-removebg-preview.PNG">
     <link rel="canonical" href="https://www.linkedin.com/in/silvanio-gois-6667b918b/">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        /* Variáveis */
+        /* ================================================= */
+        /* VARIÁVEIS E BASE */
+        /* ================================================= */
         :root {
-            --primary-color: #27628D; /* Azul Sólido */
-            --secondary-color: #00A389; /* Verde (para destaque e ação) */
-            --bg-light: #f4f6f9;
-            --text-dark: #212529;
-            --border-light: #e0e6ed;
+            --primary-color: #003366; /* Azul Escuro Executivo (Navy Blue) */
+            --secondary-color: #007bff; /* Azul de Destaque (Blue Accent) */
+            --highlight-green: #28a745; /* Verde para Automação/Sucesso */
+            --bg-light: #f8f9fa; /* Fundo Leve */
+            --text-dark: #343a40; /* Texto Principal Escuro */
+            --border-light: #dee2e6;
             --white-text: #ffffff;
             --main-bg: white;
-            --card-bg: #f8f9fa;
+            --card-bg: #ffffff; /* Fundo dos cartões (TOC, Insights) */
+            --shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Sombra suave */
         }
 
         /* Base */
+        html {
+            scroll-behavior: smooth; /* Suaviza a rolagem do botão Voltar ao Topo */
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             color: var(--text-dark);
             line-height: 1.6;
             margin: 0;
-            background-color: var(--main-bg);
+            background-color: var(--bg-light); /* Fundo da página levemente cinza */
             font-size: 16px;
         }
 
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1200px; 
             margin: 0 auto;
             padding: 20px 0;
         }
 
-        /* Header (Desktop/Mobile) */
+        /* Links Globais */
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s, opacity 0.3s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            opacity: 0.9;
+        }
+
+        /* ================================================= */
+        /* HEADER (Elegante e Focado) */
+        /* ================================================= */
         header {
             background-color: var(--primary-color);
-            padding: 1.5rem 0;
+            padding: 1.8rem 0; 
             color: var(--white-text);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .header-content {
             display: flex;
             align-items: center;
-            gap: 1.2rem;
+            gap: 1.5rem;
         }
 
         .header-content img {
-            width: 60px;
-            height: 60px;
+            width: 70px; 
+            height: 70px;
             border-radius: 50%;
-            border: 3px solid var(--white-text);
+            border: 4px solid rgba(255, 255, 255, 0.3); 
             object-fit: cover;
         }
 
         .header-title-author {
             display: flex;
             flex-direction: column;
+            gap: 0.2rem;
         }
 
         .header-title {
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 1.7rem;
+            font-weight: 800;
             color: var(--white-text);
+            letter-spacing: 0.5px;
         }
 
         .header-author {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
             font-weight: 500;
+        }
+        
+        /* Botão de Link no Header (Efeito Profissional) */
+        .header-site-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 5px 12px;
+            font-size: 0.9rem;
+            color: var(--white-text);
+            background-color: var(--secondary-color);
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .header-site-link:hover {
+            background-color: var(--highlight-green); 
+            transform: translateY(-1px); 
+            color: var(--white-text);
         }
 
         main {
-            padding: 2.5rem 0;
+            padding: 3rem 0;
             background-color: var(--main-bg);
         }
 
-        /* Tipografia e Títulos */
+        /* ================================================= */
+        /* TIPOGRAFIA E TÍTULOS */
+        /* ================================================= */
         h1 {
             color: var(--primary-color);
-            font-size: 2.4rem;
+            font-size: 2.8rem; 
             font-weight: 800;
             line-height: 1.2;
+            margin-top: 0.5rem;
         }
 
         h2 {
             color: var(--primary-color);
-            font-size: 1.9rem;
+            font-size: 2.1rem;
             font-weight: 700;
-            margin-top: 3rem;
-            margin-bottom: 1.2rem;
-            display: flex;
-            align-items: center;
-            border-bottom: 2px solid var(--border-light);
-            padding-bottom: 0.5rem;
+            margin-top: 4rem; 
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--secondary-color); 
+            padding-bottom: 0.6rem;
         }
-        
-        /* REMOVIDO: h2::before para remover o marcador em círculo */
-        
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-dark);
+        }
+
         /* Meta Info */
         .meta-info {
             font-size: 0.95rem;
             color: #6c757d;
-            margin-bottom: 2.5rem;
-            padding-left: 0;
+            margin-bottom: 3rem;
+            border-top: 1px solid var(--border-light);
+            padding-top: 1.5rem;
         }
 
         .meta-info span {
             margin-right: 1.5rem;
+            font-weight: 500;
         }
 
-        /* Sumário (TOC) */
+        /* ================================================= */
+        /* SUMÁRIO (TOC) - Card com Sombra e Hover */
+        /* ================================================= */
         .toc {
             background-color: var(--card-bg);
-            border-left: 5px solid var(--secondary-color);
-            padding: 1.5rem;
-            margin: 2.5rem 0;
-            border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-light);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow-light); 
         }
 
         .toc h3 {
             margin-top: 0;
             color: var(--primary-color);
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 700;
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.5rem;
         }
 
         .toc ul {
@@ -146,8 +199,16 @@
         }
 
         .toc li {
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.8rem;
             font-weight: 500;
+            padding-left: 0.5rem;
+            border-left: 3px solid transparent;
+            transition: border-left 0.3s;
+        }
+        
+        /* Hover Effect no Item da Lista do Sumário */
+        .toc li:hover {
+            border-left: 3px solid var(--secondary-color);
         }
 
         .toc a {
@@ -158,27 +219,31 @@
 
         .toc a:hover {
             color: var(--secondary-color);
-            text-decoration: underline;
+            text-decoration: none; 
         }
 
-        /* Tabelas */
+        /* ================================================= */
+        /* TABELAS - Design Profissional com Hover */
+        /* ================================================= */
         .table-wrapper {
             overflow-x: auto;
-            margin: 25px 0;
-            border-radius: 6px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow-light); 
             border: 1px solid var(--border-light);
         }
 
         table {
-            min-width: 650px;
+            min-width: 750px;
             width: 100%;
             border-collapse: collapse;
             font-size: 0.95rem;
             table-layout: auto;
+            background-color: white;
         }
 
         th, td {
-            padding: 14px 18px;
+            padding: 16px 20px;
             border: 1px solid var(--border-light);
             text-align: left;
         }
@@ -187,69 +252,101 @@
             background-color: var(--primary-color);
             color: white;
             font-weight: 700;
-            border-bottom: 3px solid var(--secondary-color);
+            border-bottom: 4px solid var(--secondary-color);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
         }
 
         tr:nth-child(even) {
             background-color: var(--bg-light);
         }
 
-        /* Insights (Geral e Reforma) */
-        .insight {
-            background-color: var(--card-bg);
-            border-left: 4px solid var(--secondary-color);
-            padding: 1.2rem;
-            margin: 2rem 0;
-            font-size: 1rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        
-        .insight-reforma {
-            background-color: #e6f7ff;
-            border-left: 4px solid #1890ff;
-            padding: 1.2rem;
-            margin: 2rem 0;
-            font-size: 1rem;
-            border-radius: 4px;
-            font-weight: 500;
-            color: #1f3956;
+        /* Hover Effect na Linha da Tabela */
+        tbody tr:hover {
+            background-color: #e9ecef;
+            cursor: default;
+            transition: background-color 0.3s;
         }
 
-        .insight-reforma ul {
-            list-style-type: disc;
-            margin-left: 20px;
+
+        /* ================================================= */
+        /* INSIGHTS (Cartões de Destaque) */
+        /* ================================================= */
+        .insight, .insight-reforma, .insight-automacao {
+            padding: 1.8rem; 
+            margin: 3rem 0; 
+            font-size: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.08); 
+            line-height: 1.5;
+        }
+
+        .insight {
+            background-color: #fff9e6; 
+            border-left: 5px solid #ffc107; 
+            color: #493901;
+        }
+
+        .insight-reforma {
+            background-color: #e7f5ff; 
+            border-left: 5px solid var(--secondary-color);
+            color: #00376d;
+        }
+        
+        .insight-automacao {
+            background-color: #e9f5e9; 
+            border-left: 5px solid var(--highlight-green);
+            color: #194d34;
+        }
+
+        .insight-automacao h3 {
+            color: var(--highlight-green);
+            margin-top: 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        /* Estilização Profissional das Listas com Seta */
+        .insight-reforma ul, .insight-automacao ul {
+            list-style: none; 
+            margin-left: 0;
             padding-left: 0;
         }
         
-        /* Novo Insight para Automação */
-        .insight-automacao {
-            background-color: #f7fff5;
-            border-left: 4px solid #1ba75c;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            font-size: 1rem;
-            border-radius: 4px;
-            font-weight: 500;
-            color: #194d34;
+        .insight-reforma ul li, .insight-automacao ul li {
+            position: relative;
+            padding-left: 1.5rem; 
+            margin-bottom: 0.5rem;
         }
-        .insight-automacao h3 {
-            color: #1ba75c;
-            margin-top: 0;
-            font-size: 1.2rem;
+
+        .insight-reforma ul li::before, .insight-automacao ul li::before {
+            content: '▶'; 
+            font-size: 0.7em; 
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 6px;
         }
-        .insight-automacao ul {
-             /* Removido o ícone de robô e substituído por marcador simples de lista */
-             list-style-type: disc; 
-             padding-left: 20px;
+
+        /* Color the markers */
+        .insight-reforma ul li::before {
+            color: var(--secondary-color); 
+        }
+
+        .insight-automacao ul li::before {
+             color: var(--highlight-green);
         }
 
 
-        /* Footer */
+        /* ================================================= */
+        /* FOOTER */
+        /* ================================================= */
         footer {
             background-color: var(--primary-color);
             color: var(--white-text);
-            padding: 2.5rem 0;
+            padding: 3rem 0;
             text-align: center;
         }
 
@@ -264,8 +361,57 @@
             color: var(--white-text);
             text-decoration: underline;
         }
-        
-        /* Media Queries para Responsividade (Mobile) */
+
+        /* Estilização da Frase de Base Legal para Branco (NOVO) */
+        .footer-base-legal {
+            color: var(--white-text) !important;
+            font-size:0.8rem; 
+            opacity:0.9; 
+            margin-top:1rem;
+        }
+
+        /* ================================================= */
+        /* BOTÃO VOLTAR AO TOPO (NOVO) */
+        /* ================================================= */
+        #backToTop {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            display: none; /* Escondido por padrão */
+            background-color: var(--secondary-color);
+            color: var(--white-text);
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            font-size: 1.5rem;
+            line-height: 45px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, opacity 0.3s, transform 0.2s;
+        }
+
+        #backToTop:hover {
+            background-color: var(--highlight-green);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            #backToTop {
+                width: 40px;
+                height: 40px;
+                font-size: 1.3rem;
+                line-height: 40px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+
+        /* ================================================= */
+        /* MEDIA QUERIES E PRINT */
+        /* ================================================= */
         @media (max-width: 900px) {
             .toc ul { columns: 1; }
             .container { width: 90%; }
@@ -273,26 +419,27 @@
 
         @media (max-width: 768px) {
             .container { width: 95%; }
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.5rem; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.7rem; }
             body { font-size: 15px; }
-            .header-content img { width: 50px; height: 50px; }
-            .header-title { font-size: 1.3rem; }
-            .header-author { font-size: 0.9rem; }
+            .header-content img { width: 55px; height: 55px; }
+            .header-title { font-size: 1.5rem; }
+            .header-author { font-size: 1rem; }
             .header-content { flex-direction: column; text-align: center; }
             .header-content img { margin-bottom: 0.5rem; }
             .header-title-author { align-items: center; }
+            .table-wrapper table { min-width: 100%; }
+            th, td { padding: 12px 15px; }
         }
-        
-        /* Otimização para Impressão (PDF/Papel) */
+
+        /* Otimização para Impressão */
         @media print {
             body {
                 font-size: 12pt;
                 color: black;
                 background-color: white;
             }
-
-            header, footer, .toc {
+            header, footer, .toc, #backToTop { /* Adicionado #backToTop para não imprimir */
                 background-color: white !important;
                 color: black !important;
                 padding: 0;
@@ -300,26 +447,21 @@
                 box-shadow: none;
                 border: none;
             }
-
-            footer, .toc a, .meta-info {
+            footer, .toc a, .meta-info, #backToTop { /* Esconde o botão na impressão */
                 display: none;
             }
-
             h1, h2, th {
                 color: black !important;
                 border-color: #ccc !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+            }                        
+            h2 {
+                border-bottom: 2px solid #ccc !important;
             }
-            
-            h2::before {
-                content: "";
-                margin-right: 0;
-            }
-
             table, th, td {
                 border-color: #ccc !important;
-            }
+            }            
             tr:nth-child(even) {
                 background-color: #f0f0f0 !important;
                 -webkit-print-color-adjust: exact;
@@ -329,7 +471,6 @@
                 background-color: #ddd !important;
                 border-bottom: 1px solid #ccc !important;
             }
-
             .insight, .insight-reforma, .insight-automacao {
                 border: 1px solid #999;
                 border-left: 4px solid var(--primary-color);
@@ -338,53 +479,52 @@
                 print-color-adjust: exact;
                 padding: 10px;
                 margin-top: 15px;
+                box-shadow: none;
             }
             .insight-automacao h3 { color: black !important; }
-            .insight-automacao ul { list-style-type: '- '; }
-
+            .insight-automacao ul li::before { content: '-'; color: black; } 
             .header-content {
                 display: block;
                 text-align: center;
                 border-bottom: 2px solid black;
                 padding-bottom: 15px;
             }
-
             .header-content img { display: none; }
             .header-title { font-size: 1.5rem; font-weight: bold; }
-            .header-author { font-size: 1.1rem; }
-            
+            .header-author { font-size: 1.1rem; }                        
             .table-wrapper, .insight, .insight-reforma, .insight-automacao {
                 page-break-inside: avoid;
             }
-
-            #secao8 { /* Referências */
+            #secao8 { 
                 page-break-before: always;
             }
         }
     </style>
 </head>
 <body>
+<a id="top"></a> 
+
 <header>
     <div class="container header-content">
         <img src="SG_Executivo-removebg-preview.PNG" alt="Foto de Perfil ou Logomarca de Silvanio Gois">
         <div class="header-title-author">
             <span class="header-title">ESTUDO EXECUTIVO | ESTRUTURA FISCAL</span>
             <span class="header-author">Desenvolvido por Silvanio Gois</span>
-           <a href="https://www.silvaniogois.com.br/" target="_blank" rel="noopener" style="color: #999999;">Ir ao Site</a>
+           <a href="https://www.silvaniogois.com.br/" target="_blank" rel="noopener" class="header-site-link">Ir ao Site</a>
         </div>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <p style="color: var(--primary-color); font-weight:700; margin-bottom:0; text-transform:uppercase;">Planejamento Fiscal e Estrutura Societária</p>
+        <p style="color: var(--secondary-color); font-weight:700; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing: 2px;">Planejamento Fiscal e Estrutura Societária</p>
         <h1>Estruturas Jurídicas e Regimes Tributários no Brasil: Análise Estratégica para Gestores e Decisores</h1>
         <p style="font-style:italic; color:#555;">Análise comparativa das estruturas legais e regimes tributários empresariais no contexto brasileiro atual, visando a otimização de custos e a conformidade (Compliance).</p>
 
         <div class="meta-info">
             <span><strong>Atualizado em:</strong> Novembro de 2025</span>
             <span> &bull; <strong>Tempo de leitura:</strong> 15 minutos (Estimativa)</span>
-            <p style="margin-top:0.8rem;">Elaborado por: <strong>Silvanio Gois</strong></p>
+            <p style="margin-top:0.8rem;">Elaborado por: <strong>Silvanio Gois</strong> — Legislação e Planejamento Fiscal.</p>
         </div>
 
         <h2 id="secao-resumo">Resumo Executivo</h2>
@@ -407,7 +547,6 @@
         <h2 id="secao1">1. Introdução Estratégica</h2>
         <p>A definição da natureza jurídica e do regime tributário é decisiva para o posicionamento e a sustentabilidade de qualquer negócio no Brasil. A legislação nacional exige escolhas estratégicas que impactam diretamente a responsabilidade dos sócios, o custo fiscal (carga tributária) e o nível de complexidade operacional. Um erro nesta escolha pode comprometer a margem de lucro e expor o patrimônio dos sócios.</p>
         <p>A correta estruturação jurídica e fiscal vai além da simples conformidade. Ela estabelece as bases para o crescimento seguro, influenciando diretamente a capacidade da empresa de atrair investimentos e gerenciar passivos. Em um ambiente regulatório complexo como o brasileiro, a análise prévia de risco e o planejamento se tornam ferramentas indispensáveis de governança corporativa.</p>
-
 
         <h2 id="secao2">2. Naturezas Jurídicas: Tipos e Responsabilidade</h2>
         <p>O quadro abaixo apresenta as principais formas de constituição empresarial, focando na responsabilidade dos sócios e na separação patrimonial – um ponto crítico de análise de risco para gestores.</p>
@@ -432,9 +571,8 @@
             </table>
         </div>
         <div class="insight">
-            <strong>Insight Executivo (Governança e Risco):</strong> A Sociedade Limitada Unipessoal (SLU) consolidou-se como a melhor alternativa para empreendedores individuais, garantindo <strong>segurança patrimonial</strong> sem a exigência de capital mínimo ou sócios. É o padrão de mercado para empresas individuais que buscam mitigar riscos.
+            <strong>💡 Insight Executivo (Governança e Risco):</strong> A Sociedade Limitada Unipessoal (SLU) consolidou-se como a melhor alternativa para empreendedores individuais, garantindo <strong>segurança patrimonial</strong> sem a exigência de capital mínimo ou sócios. É o padrão de mercado para empresas individuais que buscam mitigar riscos.
         </div>
-
         <h2 id="secao3">3. Classificação por Porte Empresarial (Faturamento)</h2>
         <p>O porte empresarial é um fator fiscal e regulatório que determina o acesso a regimes simplificados (como o Simples Nacional) e políticas de incentivo (crédito, licitações, etc.). Esta classificação é baseada no faturamento bruto anual.</p>
         <div class="table-wrapper">
@@ -451,10 +589,8 @@
             </table>
         </div>
         <p>A transição de porte (por exemplo, de ME para EPP) exige atenção no planejamento fiscal, pois pode forçar a migração de regimes, impactando subitamente a carga tributária e o compliance.</p>
-
         <h2 id="secao4">4. Regimes Tributários Brasileiros</h2>
         <p>Os regimes tributários definem como será calculada a carga fiscal federal. A escolha ideal exige um <strong>planejamento fiscal robusto</strong>, pois depende da estrutura de custos (despesas dedutíveis), margem de lucro e tipo de atividade.</p>
-        
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -492,25 +628,21 @@
             </table>
         </div>
         <div class="insight-reforma">
-            <strong>Impacto Estratégico da Reforma Tributária (EC 132/2023): Visão de Futuro</strong>
+            <strong>⚖️ Impacto Estratégico da Reforma Tributária (EC 132/2023): Visão de Futuro</strong>
             <p>A Emenda Constitucional nº 132/2023 institui o novo modelo tributário com o <strong>IVA-Dual</strong> (CBS - Federal, e IBS - Estadual/Municipal), substituindo PIS, COFINS, IPI, ICMS e ISS. A transição ocorrerá de forma gradual (entre 2026 e 2033).</p>
-            
-            <p style="margin-top:10px;"><strong>Implicações Práticas Imediatas (2026 em diante):</strong></p>
+                        <p style="margin-top:10px;"><strong>Implicações Práticas Imediatas (2026 em diante):</strong></p>
             <ul>
-                <li><strong>Fim da Cumulatividade Restrita:</strong> O novo sistema adota a <strong>Não Cumulatividade Ampla</strong>, permitindo o crédito sobre uma gama muito maior de aquisições (insumos, energia, serviços, etc.), eliminando o 'imposto em cascata'.</li>
-                <li><strong>Tributação no Destino:</strong> O imposto será devido onde o bem ou serviço é consumido, não mais na origem (produção/venda). Isso impacta radicalmente o fluxo de caixa em operações interestaduais e a gestão de benefícios fiscais.</li>
-                <li><strong>Aumento da Alíquota Nominal:</strong> Embora a carga tributária total esperada seja neutra, a alíquota de referência do IVA-Dual é alta (estimada em torno de 27% a 28%). O efeito prático será o aumento da alíquota <strong>nominal</strong> e a compensação via <strong>créditos</strong>.</li>
+                <li>Fim da Cumulatividade Restrita: O novo sistema adota a <strong>Não Cumulatividade Ampla</strong>, permitindo o crédito sobre uma gama muito maior de aquisições (insumos, energia, serviços, etc.), eliminando o 'imposto em cascata'.</li>
+                <li>Tributação no Destino: O imposto será devido onde o bem ou serviço é consumido, não mais na origem (produção/venda). Isso impacta radicalmente o fluxo de caixa em operações interestaduais e a gestão de benefícios fiscais.</li>
+                <li>Aumento da Alíquota Nominal: Embora a carga tributária total esperada seja neutra, a alíquota de referência do IVA-Dual é alta (estimada em torno de 27% a 28%). O efeito prático será o aumento da alíquota <strong>nominal</strong> e a compensação via <strong>créditos</strong>.</li>
             </ul>
-
             <p style="margin-top:10px;"><strong>Consequências para Lucro Presumido (LP) e Lucro Real (LR):</strong></p>
-            <ul style="list-style-type: square;">
-                <li><strong>Lucro Presumido:</strong> Empresas que operam no LP e têm poucas despesas dedutíveis (especialmente serviços) enfrentarão um <strong>aumento na alíquota efetiva</strong> sobre o consumo (PIS/COFINS passa de 3,65% para a alíquota total da CBS/IBS, mesmo com a redução de 30% para algumas profissões liberais). Isso exige uma reavaliação urgente para migração.</li>
-                <li><strong>Lucro Real:</strong> O LR tende a ser <strong>beneficiado</strong> pelo regime de Não Cumulatividade Ampla e pela possibilidade de crédito imediato sobre bens de capital (máquinas e equipamentos), estimulando investimentos e modernização industrial.</li>
+            <ul>
+                <li>Lucro Presumido: Empresas que operam no LP e têm poucas despesas dedutíveis (especialmente serviços) enfrentarão um <strong>aumento na alíquota efetiva</strong> sobre o consumo (PIS/COFINS passa de 3,65% para a alíquota total da CBS/IBS, mesmo com a redução de 30% para algumas profissões liberais). Isso exige uma reavaliação urgente para migração.</li>
+                <li>Lucro Real: O LR tende a ser <strong>beneficiado</strong> pelo regime de Não Cumulatividade Ampla e pela possibilidade de crédito imediato sobre bens de capital (máquinas e equipamentos), estimulando investimentos e modernização industrial.</li>
             </ul>
-            
-            <p style="margin-top:10px; font-weight:700;">Ação do Gestor: Simulação Fiscal Imediata. É mandatório simular os custos no cenário pós-Reforma para Lucro Presumido versus Lucro Real e definir a estratégia de 2027 (quando a CBS entra com alíquota cheia).</p>
+                        <p style="margin-top:10px; font-weight:700;">Ação do Gestor: Simulação Fiscal Imediata. É mandatório simular os custos no cenário pós-Reforma para Lucro Presumido versus Lucro Real e definir a estratégia de 2027 (quando a CBS entra com alíquota cheia).</p>
         </div>
-
 
         <h2 id="secao5">5. Matriz de Decisão: Síntese Estratégica dos Regimes</h2>
         <p>O quadro a seguir resume a aplicabilidade dos regimes, auxiliando na matriz de decisão do gestor, baseada nos pilares de complexidade e risco.</p>
@@ -526,27 +658,23 @@
                 </tbody>
             </table>
         </div>
-        
-        <h2 id="secao6">6. Automação Contábil e Fiscal: O Compliance 4.0</h2>
+                <h2 id="secao6">6. Automação Contábil e Fiscal: O Compliance 4.0</h2>
         <p>A complexidade da legislação atual, somada à fase de coexistência de regimes trazida pela Reforma Tributária, torna a Automação Contábil e Fiscal um <strong>pró-requisito de sobrevivência</strong> e não mais um diferencial. A gestão manual de apuração diária de créditos do novo IVA-Dual se tornará inviável sem o suporte tecnológico adequado.</p>
-
         <div class="insight-automacao">
             <h3>Benefícios Chave da Automação na Era da Reforma</h3>
             <ul>
-                <li><strong>Mitigação de Riscos Fiscais:</strong> Softwares atualizam automaticamente as regras tributárias (inclusive as complexas regras de transição), reduzindo falhas humanas em lançamentos e cálculos de impostos.</li>
-                <li><strong>Precisão em Tempo Real:</strong> A integração de sistemas (ERP) permite apuração de débitos e créditos de forma contínua, garantindo que a tomada de decisão (e a precificação) seja baseada em dados fiscais íntegros.</li>
-                <li><strong>Foco Estratégico:</strong> A eliminação de tarefas manuais e repetitivas (como digitação de NFes e conciliação) libera a equipe contábil para se dedicar à análise, ao planejamento tributário e à geração de <em>insights</em> estratégicos.</li>
-                <li><strong>Eficiência Operacional:</strong> Redução drástica do tempo de fechamento (mensal e fiscal) e diminuição do retrabalho, resultando em menor custo operacional e maior produtividade.</li>
+                <li>Mitigação de Riscos Fiscais: Softwares atualizam automaticamente as regras tributárias (inclusive as complexas regras de transição), reduzindo falhas humanas em lançamentos e cálculos de impostos.</li>
+                <li>Precisão em Tempo Real: A integração de sistemas (ERP) permite apuração de débitos e créditos de forma contínua, garantindo que a tomada de decisão (e a precificação) seja baseada em dados fiscais íntegros.</li>
+                <li>Foco Estratégico: A eliminação de tarefas manuais e repetitivas (como digitação de NFes e conciliação) libera a equipe contábil para se dedicar à análise, ao planejamento tributário e à geração de <em>insights</em> estratégicos.</li>
+                <li>Eficiência Operacional: Redução drástica do tempo de fechamento (mensal e fiscal) e diminuição do retrabalho, resultando em menor custo operacional e maior produtividade.</li>
             </ul>
         </div>
-        
         <p><strong>Ação Estratégica:</strong> Investir em sistemas de gestão fiscal (ERPs) com módulos de <em>compliance</em> atualizáveis é o passo essencial para garantir a conformidade e a eficiência operacional durante e após o período de transição da EC 132/2023.</p>
 
         <h2 id="secao7">7. Conclusão Executiva e Visão de Futuro</h2>
         <p>A escolha da estrutura jurídica e do regime tributário é uma decisão estratégica de longo prazo que impacta diretamente a competitividade empresarial. Um planejamento adequado permite reduzir riscos (principalmente na responsabilidade dos sócios), otimizar tributos e ampliar o potencial de crescimento.</p>
         <p>Com a <strong>Reforma Tributária</strong> em curso, gestores deverão obrigatoriamente reavaliar seus modelos fiscais nos próximos anos, adotando práticas de <strong>compliance</strong> rigorosas e <strong>automação contábil</strong> para manter a eficiência e a conformidade legal. O futuro exige uma contabilidade cada vez mais consultiva e analítica, transformando o custo fiscal em vantagem competitiva.</p>
         <p>A transição para o novo IVA-Dual representa uma <strong>janela de oportunidade</strong> para que empresas com alta despesa de capital ou alto volume de insumos (Indústria e Comércio) encontrem maior neutralidade e reduzam a carga efetiva, enquanto prestadores de serviços no Lucro Presumido deverão agir preventivamente para evitar o aumento de custos a partir de 2027.</p>
-
 
         <h2 id="secao8">8. Referências e Base Legal (ABNT)</h2>
         <ul style="list-style:none; padding-left:0; font-size:0.9rem;">
@@ -564,8 +692,36 @@
     <div class="container footer-content-custom">
         © 2025 Silvanio Gois - Todos os direitos reservados |
         <a href="https://www.silvaniogois.com.br/" target="_blank" rel="noopener">Ir ao Site</a>
-        <p style="font-size:0.8rem; opacity:0.9; margin-top:1rem;">Baseado em fontes oficiais da Receita Federal, Sebrae e legislação vigente até <strong>Novembro de 2025</strong>.</p>
+        <p class="footer-base-legal">Baseado em fontes oficiais da Receita Federal, Sebrae e legislação vigente até <strong>Novembro de 2025</strong>.</p>
     </div>
 </footer>
+
+<button onclick="topFunction()" id="backToTop" title="Voltar ao Topo">▲</button>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("backToTop");
+
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        // Usa document.body.scrollTop e document.documentElement.scrollTop para compatibilidade
+        // E usa scrollIntoView para rolagem suave (configurado no CSS: scroll-behavior: smooth)
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        window.scrollTo({top: 0, behavior: 'smooth'}); // Opção mais moderna, já está no CSS
+    }
+</script>
+
 </body>
 </html>
